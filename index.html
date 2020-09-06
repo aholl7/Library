@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "topHead">
+            <h1 id = "header">Library</h1>
+            <button id = "addBook">Add Book</button>
+        </div>
+
+        <div id = "myModal" class = "modal">
+            <div class = "model-content">
+                <ul class = "headerMod">
+                    <li><h2 class = "bookInformation">Book Information</h2></li>
+                    <li><span class = "close">&times;</span></li>
+                </ul>
+                <hr class = "modtopLine">
+            <div class = "inputForm">
+                <br>
+                <label for = "bookTitle">Book Title</label><br><br>
+                <input type="text"  id="bookTitle" name="bookTitle" placeholder = "Enter in the book title" ><br><br>
+
+                <label for = "Author">Author</label><br><br>
+                <input type="text"  id="Author" name="Author" placeholder = "Enter in the author's name" ><br><br>
+
+                <label for = "Pages">Pages</label><br><br>
+                <input type="text" id="Pages" name="Pages" placeholder = "Enter in the amount of pages" required><br><br>
+
+                <p>Have you read this book?</p>
+                <select name="yesOrNo" id="Read" required>
+                    <option value="Select">Select</option>
+                    <option value="1" selected>Yes</option>
+                    <option value="">No</option>
+                </select><br><br><br>  
+                <button id = "submit">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class = "topBar">
+            
+            
+        </div>
+
+        <table class = "bookTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th> 
+                    <th>Delete</th>
+                </tr>
+            </thead>
+          
+            <tbody id = "tableBody">
+               
+
+               
+            </tbody>
+            
+            
+            
+        </table>
+       
+
+        
+
+        <div id = div1></div>
+
+  
+
+    </div>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
